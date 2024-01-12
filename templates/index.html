@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="../static/index.css">
+{% endblock %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block actual_name %}
+    {{actual_name}}
+{% endblock %}
+
+{% block main %}
+<!--email list-->
+<h1 class="title-info">
+    Received emails:
+</h1>
+
+{% if not received %}
+    <p class="noemails">No Emails</p>
+
+{% else %}
+    <main class="list">
+        {% for mail in received %}
+            <div class="item">
+                <div class="sender">
+                    {{mail.name}}
+                </div>
+                <div class="sumary">
+                    {{mail.message}}
+                </div>
+                <div class="date">
+                    {{mail.date}}
+                </div>
+            </div>
+        {% endfor %}
+    </main>
+{% endif %}
+
+<!-- send button -->
+<a href="/send" class="sendEmail">Send Email</a>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock %}</title>
+    <link rel="stylesheet" href="../static/layout.css">
+    <script defer src="../static/layout.js"></script>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <!-- navbar section -->
+    <nav>
+        <div class="icon">
+            <div>
+                <a style="text-decoration: none;" href="/"><span class="icon-name">{Arcadia50}</span></a>
+                <img class="logo" src="../static/hermes.png" alt="">
+            </div>
+        </div>
+        <div class="cumpriment">
+            Hello, <span class="name">{% block actual_name %}{% endblock %}</span>
+        </div>
+        <div class="menu-icon">
+            <img src="../static/menu_icon_128814.png" alt="">
+            <div class="hidden-box">
+                <a href="/settings">Settings</a>
+                <a href="/login">Logout</a>
+            </div>
+        </div>
+    </nav>
+    {% block main %}
+    {% endblock %}
+</body>

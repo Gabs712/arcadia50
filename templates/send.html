@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Send</title>
+<link rel="stylesheet" href="../static/send.css">
+{% endblock %}
+
+{% block title %}
+    Send Email
+{% endblock %}
+
+{% block actual_name %}
+    {{actual_name}}
+{% endblock %}
+
+{% block main %}
+<main class="send-div">
+    <form class="send-form" action="/send" method="post">
+        <label for="username">Send To:</label>
+        <input class="input1" name="username" type="text" placeholder="Username" autocomplete="off" autofocus>
+        <p>{{error1}}</p>
+
+        <label for="message">Message:</label>
+        <input class="input2" name="message" type="text" placeholder="Text" autocomplete="off">
+        <p>{{error2}}</p>
+
+        <button class="button1" type="submit">Send Email</button>
+    </form>
+</main>
+{% endblock %}

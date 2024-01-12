@@ -1,0 +1,64 @@
+:root {
+    --golden: rgba(202, 138, 19, 0.911);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 100px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 4px;
+    padding-inline: 35px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+    height: 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+}
+.logo {
+    width: 50px;
+    text-align: center;
+}
+
+.icon-name {
+    font-weight: 400;
+    font-family: 'Arvo', Arial, Helvetica, sans-serif;
+    color: var(--golden);
+    font-size: 27px;
+}
+.name {
+    color: var(--golden);
+}
+.cumpriment {
+    font-size: 27px;
+    color: rgb(72, 64, 64);
+    margin-right: 150px;
+}
+.hidden-box {
+    position: absolute;
+    background-color: white;
+    bottom: -42px;
+    right: 45px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.189);
+    padding: 7px 30px 7px 7px;
+    visibility: hidden;
+}
+.menu-icon img {
+    width: 38px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hidden-box a{
+    color: var(--golden);
+    display: block;
+    text-decoration: none;
+}
+.hidden-box a:first-child {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Send</title>
+<link rel="stylesheet" href="../static/settings.css">
+{% endblock %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block actual_name %}
+    {{actual_name}}
+{% endblock %}
+
+{% block main %}
+<main class="send-div">
+    <form class="send-form" action="/settings" method="post">
+        <label for="username">Username:</label>
+        <input name="new-username" type="text" placeholder="New Username" autocomplete="off">
+        <p>{{error1}}</p>
+
+        <button type="submit">Change Username</button>
+    </form>
+    <form class="send-form" action="/settings" method="post">
+        <label for="username">Password:</label>
+        <input class="old-password" name="old-password" type="password" placeholder="Old Password" autocomplete="off">
+        <input name="new-password" type="password" placeholder="New Password" autocomplete="off">
+        <p>{{error2}}</p>
+
+        <button type="submit">Change Password</button>
+    </form>
+</main>
+{% endblock %}

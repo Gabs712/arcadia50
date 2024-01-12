@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    width: 400px;
+    border: 1px rgba(202, 138, 19, 0.911) solid;
+    border-radius: 20px;
+}
+h1 {
+    color: rgba(255, 182, 47, 0.911);
+    font-style: italic;
+    font-size: 50px;
+    font-weight: bold;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+form {
+    margin-top: 40px;
+}
+input {
+    display: block;
+    margin-bottom: 20px;
+    padding-inline: 13px;
+    height: 44px;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.36);
+    border-radius: 10px;
+    color: gray;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+}
+button {
+    border-radius: 17px;
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(255, 182, 47);
+    color: white;
+    font-weight: bold;
+    margin-left: 65px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(252, 165, 3);
+}
+button:active {
+    opacity: 0.6;
+}
+
+p {
+    color: rgba(121, 121, 121, 0.744);
+    margin-top: 45px;
+}
+.register-button {
+    margin-left: 50px;
+}
+.invalid {
+    text-align: center;
+    color: rgb(255, 73, 73);
+    font-size: 13px;
+    margin: 0;
+    height: 15px;
+}
